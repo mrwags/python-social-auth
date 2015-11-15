@@ -81,6 +81,7 @@ Social backends
    google
    instagram
    jawbone
+   justgiving
    kakao
    khanacademy
    lastfm
@@ -131,6 +132,7 @@ Social backends
    twilio
    twitch
    twitter
+   uber
    vend
    vimeo
    vk

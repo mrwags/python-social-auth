@@ -7,7 +7,7 @@ Some miscellaneous options and use cases for python-social-auth_.
 Return the user to the original page
 ------------------------------------
 
-There's a common scenario were it's desired to return the user back to the
+There's a common scenario where it's desired to return the user back to the
 original page from where it was requested to login. For that purpose, the usual
 ``next`` query-string argument is used, the value of this parameter will be
 stored in the session and later used to redirect the user when login was
@@ -90,7 +90,7 @@ function, like this::
         'social.pipeline.user.create_user',
         'social.pipeline.social_auth.associate_user',
         'social.pipeline.social_auth.load_extra_data',
-        'social.pipeline.user.user_details'
+        'social.pipeline.user.user_details',
     )
 
 This feature is disabled by default because it's not 100% secure to automate
@@ -139,7 +139,7 @@ implemented easily)::
         else:
             return 'ERROR'
 
-The snipped above is quite simple, it doesn't return JSON and usually this call
+The snippet above is quite simple, it doesn't return JSON and usually this call
 will be done by AJAX. It doesn't return the user information, but that's
 something that can be extended and filled to suit the project where it's going
 to be used.
